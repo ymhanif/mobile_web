@@ -1,0 +1,68 @@
+<!DOCTYPE	html>	
+<html>	
+	<head>	
+		<link	rel="stylesheet" href="/mobileweb/jq/jquery.mobile-1.4.4.min.css">	
+		<script	src="/mobileweb/jq/jquery-1.11.1.min.js"></script>	
+		<script	src="/mobileweb/jq/jquery.mobile-1.4.4.min.js"></script>	
+	</head>	
+
+	<body>
+		<div	data-role="page"	id="pageone" data-theme="b">
+
+			<div	data-role="header" data-position="fixed">	
+				<h1>Home</h1>
+				<div data-role = "navbar">
+					<ul>
+						<li><a href="#" class="ui-btn-active ui-state-persist" data-icon="home" data-iconpos="top">Home</a></li>
+						<li><a href="another.html" data-transition="slidedown" data-icon="search" data-iconpos="top">Another Page</a></li>
+					</ul>
+				</div>	
+			</div>
+
+
+
+			<div role="main" class="ui content">
+				<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h1>Personal Information</h1>
+						<form method="post" action="demoform.asp">
+							<div data-role="fieldcontain">
+								<label for="uname">Firstname:</label>
+								<input type="text" name="fname" id="fname">
+								<label for="pname">Lastname:</label>
+								<input type="text" name="lname" id="lname">
+								<label for="age">Age:</label>
+								<input type="text" name="age" id="age">
+								<label for="uname">Username:</label>
+								<input type="text" name="username" id="username">
+								<br>
+								<label for="pword">Password:</label>
+								<input type="password" name="pword" id="pword">
+								<label for="c_pword">Confirm Password:</label>
+								<input type="password" name="c_pword" id="c_pword">
+							</div>
+						</form>
+					</div>
+					<div data-role="collapsible">
+						<h1>Route Information</h1>
+						<p>expanded content</p>
+					</div>
+					<div data-role="collapsible">
+						<h1>Contact Information</h1>
+						<p>expanded content</p>
+					</div>
+					<a href="another.html" data-role="button">Save</a>
+				</div>
+
+			</div>
+
+			<div	data-role="footer" data-position="fixed">	
+				<!-- <h1>Mobile Web Inc.</h1>	 -->
+				<a href="#" data-role="button">Home</a>
+				<a href="#" data-role="button">Search</a>
+			</div>
+
+		</div>
+	</body>
+
+</html>
